@@ -1,4 +1,4 @@
-# Secure File Sharing (Learning Project)
+# Secure File Sharing BlockShare
 
 This project demonstrates a **BlockShare** built using **React** for the frontend and **Solidity smart contracts** on the blockchain for backend storage and access management.
 
@@ -25,3 +25,4 @@ This project demonstrates a **BlockShare** built using **React** for the fronten
 - Not intended for production use.
 
 ---
+
