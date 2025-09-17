@@ -1,0 +1,322 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.App-header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.network-info {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.network-info p {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.wallet-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-info div p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #2d3748;
+  text-align: left;
+}
+
+.connect-btn,
+.disconnect-btn,
+.action-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.connect-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.connect-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.connect-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.disconnect-btn {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.disconnect-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.6);
+}
+
+.action-btn {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  width: 100%;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 172, 254, 0.6);
+}
+
+.verify-btn {
+  background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
+  box-shadow: 0 4px 15px rgba(86, 171, 47, 0.4);
+}
+
+.verify-btn:hover {
+  box-shadow: 0 8px 25px rgba(86, 171, 47, 0.6);
+}
+
+.action-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.form-section {
+  margin: 40px 0;
+  padding: 30px;
+  border: 2px solid #e2e8f0;
+  border-radius: 15px;
+  background: rgba(247, 250, 252, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-section h3 {
+  margin-top: 0;
+  color: #2d3748;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.file-upload {
+  margin-bottom: 20px;
+}
+
+.file-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px dashed #cbd5e0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.file-input:hover {
+  border-color: #4facfe;
+}
+
+.file-info {
+  margin: 10px 0;
+  color: #4a5568;
+  font-style: italic;
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  background: white;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #4facfe;
+  box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.1);
+}
+
+.hash-field {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  background: white;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+.hash-field:focus {
+  outline: none;
+  border-color: #4facfe;
+  box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.1);
+}
+
+.error {
+  color: #e53e3e;
+  background: linear-gradient(135deg, #fed7d7 0%, #feb2b2 100%);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #e53e3e;
+}
+
+.verification-result {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.verification-result.success {
+  background: linear-gradient(135deg, #c6f6d5 0%, #9ae6b4 100%);
+  color: #22543d;
+  border-left: 4px solid #38a169;
+}
+
+.verification-result.failure {
+  background: linear-gradient(135deg, #fed7d7 0%, #feb2b2 100%);
+  color: #742a2a;
+  border-left: 4px solid #e53e3e;
+}
+
+.transaction-info {
+  margin-top: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+  border-radius: 10px;
+  border-left: 4px solid #38b2ac;
+}
+
+.transaction-info h4 {
+  margin-top: 0;
+  color: #234e52;
+}
+
+.tx-link {
+  color: #3182ce;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  word-break: break-all;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.tx-link:hover {
+  text-decoration: underline;
+}
+
+.info-box {
+  background: linear-gradient(135deg, #fef5e7 0%, #fbd38d 100%);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border-left: 4px solid #ed8936;
+}
+
+.info-box h4 {
+  margin-top: 0;
+  color: #7b341e;
+}
+
+.info-box ul {
+  text-align: left;
+  color: #744210;
+}
+
+.info-section {
+  background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  border-left: 4px solid #38a169;
+}
+
+.info-section h4 {
+  margin-top: 0;
+  color: #22543d;
+}
+
+.info-section ol {
+  text-align: left;
+  color: #276749;
+}
+
+.info-section li {
+  margin-bottom: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .wallet-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .wallet-info div p {
+    text-align: center;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+}
